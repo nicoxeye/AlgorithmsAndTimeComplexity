@@ -2,14 +2,14 @@
 #include <string.h>
 
 // original algorithm sent by the professor
-int search(char w[], char t[]){
+int search(char pat[], char txt[]){
     int i = 0;
     int j = 0;
-    int m = strlen(w);
-    int n = strlen(t);
+    int m = strlen(pat);
+    int n = strlen(txt);
 
     while ( (j < m) && (i < n) ) {
-        if (t[i] != w[j]) {
+        if (txt[i] != pat[j]) {
             i -= j;
             j = -1;
         }

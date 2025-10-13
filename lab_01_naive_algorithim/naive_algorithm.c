@@ -2,17 +2,17 @@
 #include <string.h>
 
 // my implementation, easier for me to understand :)
-int search(char w[], char t[]) {
+int search(char pat[], char txt[]) {
     int i = 0;
-    int m = strlen(w);
-    int n = strlen(t);
+    int m = strlen(pat);
+    int n = strlen(txt);
     int MAX = n - m;
 
     for (int i = 0; i <= MAX; i++) {
 
         int j = 0;
 
-        while (j < m && t[i + j] == w[j]) {
+        while (j < m && txt[i + j] == pat[j]) {
             j++;
         }
 
