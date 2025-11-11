@@ -1,0 +1,1 @@
+https://www.geeksforgeeks.org/dsa/boyer-moore-algorithm-for-pattern-searching
